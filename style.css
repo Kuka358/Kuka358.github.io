@@ -41,6 +41,7 @@ main {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: white;
 }
 
 /* Логотип и название сайта */
@@ -84,7 +85,7 @@ main {
 
 /* Секция со списком гиперссылок */
 #links-section {
-    background: white;
+
     padding: 30px;
     margin-bottom: 30px;
 }
