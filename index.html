@@ -5,9 +5,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header id="site-header">
-        <div class="container">
-            <div class="header-content">
+    <header id="site-header">
+        <div class="header-content">
                 <div class="logo">
                     <div class="logo-img"><img src="image.png" alt="Лого" style="width: 70px;"></div>
                     <div class="site-title">Название сайта</div>
@@ -19,11 +18,11 @@
                         <li><a href="#contact">Ссылка 3</a></li>
                     </ul>
                 </nav>
-            </div>
         </div>
+        
     </header>
 
-    <main class="container">
+    <main>
         <section id="links-section">
             <h2 class="section-title">Маркированный список гиперссылок</h2>
             <ul class="links-list">
@@ -131,7 +130,7 @@
             </table>
         </section>
 
-    <section id="form-section">
+            <section id="form-section">
                 <h2 class="section-title">Форма</h2>
                 <form class="site-form" action="/" method="POST">
                         <label>
@@ -172,7 +171,7 @@
                         <label>
                           Любимый язык программирования:
                           <br>
-                          <select name="field-PL"
+                          <select name="field-PL[]"
                             multiple="multiple">
                             <option value="1">Pascal</option>
                             <option value="2" selected="selected">C</option>
@@ -201,7 +200,7 @@
                         <input type="submit" value="Сохранить">
 
                 </form>
-              </section>
+            </section>
     </main>
 
     <footer id="site-footer">
