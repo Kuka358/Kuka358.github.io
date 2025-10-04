@@ -15,7 +15,7 @@ body {
 #site-header {
     background-color: #2c3e50;
     color: white;
-    width: 100vw;
+    width: 100hw;
 }
 
 .header-content {
@@ -29,7 +29,7 @@ main {
   background: white;
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100hw;
 }
 
 /* Логотип и название сайта */
@@ -137,7 +137,7 @@ main {
     background-color: #2c3e50;
     color: white;
     padding: 30px 100px;
-    width: 100vw;
+    width: 100hw;
 }
 
 @media screen and (min-width: 768px) {
