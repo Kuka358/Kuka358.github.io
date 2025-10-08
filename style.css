@@ -160,7 +160,11 @@ main {
 
     #main-nav ul {
         flex-direction: row;
-        gap: 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        padding: 15px;
     }
     
     #form-section {order: 3;}
