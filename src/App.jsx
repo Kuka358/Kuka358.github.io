@@ -24,13 +24,12 @@ import {
   SaveOutlined
 } from '@ant-design/icons';
 
-const { Header, Content, Footer } = Layout;
+const { Content, Footer } = Layout;
 const { Title, Text, Link } = Typography;
 const { TextArea } = Input;
 const { Option } = Select;
 
 const App = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [form] = Form.useForm();
 
   // Данные для таблицы
@@ -137,7 +136,7 @@ const App = () => {
       <div className="site-header">
         <div className="header-content">
           <div className="logo-section">
-            <img src = "image.png" alt = "Лого" width={50}/>
+            <img src="./image.png" alt="Лого" width={50} />
             <Title level={3} className="site-title">
               Название сайта
             </Title>
@@ -190,7 +189,7 @@ const App = () => {
                   </li>
 
                   <li style={{ marginBottom: '8px' }}>
-                    <Link href="https://kubsu.ru" title="Цветок"><img src="image.jpg" alt="Цветок" width="300" height="300"></img></Link>    
+                    <Link href="https://kubsu.ru" title="Цветок"><img src="./image.jpg" alt="Цветок" width="300" height="300"></img></Link>
                   </li>
 
                   <li style={{ marginBottom: '8px' }}>
@@ -199,7 +198,7 @@ const App = () => {
                     </Link>
                   </li>
 
-                  <li style={{marginBottom: '8px' }}>
+                  <li style={{ marginBottom: '8px' }}>
                     <Link href="/" title="Сокращенная ссылка на главную страницу">
                       Сокращенная ссылка на главную страницу
                     </Link>
@@ -249,7 +248,7 @@ const App = () => {
 
                   <li style={{ marginBottom: '8px' }}>
                     <img
-                      src="/image.jpg"
+                      src="./image.jpg"
                       alt="Карта-изображение"
                       useMap="#exampleMap"
                       width={300}
@@ -421,7 +420,7 @@ const App = () => {
       <Footer style={{ textAlign: 'center', background: '#001529', color: 'white' }}>
         © 2025 Сергей Волков. Все права защищены.
       </Footer>
-      
+
       {/* Стили для адаптивности */}
       <style>{`
         .site-header {
