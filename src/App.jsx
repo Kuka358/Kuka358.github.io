@@ -23,6 +23,8 @@ import {
   MailOutlined,
   SaveOutlined
 } from '@ant-design/icons';
+import logo from "./assets/image.png";
+import map from "./assets/image.jpg";
 
 const { Content, Footer } = Layout;
 const { Title, Text, Link } = Typography;
@@ -136,7 +138,7 @@ const App = () => {
       <div className="site-header">
         <div className="header-content">
           <div className="logo-section">
-            <img src="./image.png" alt="Лого" width={50} />
+            <img src={logo} alt="Лого" width={50} />
             <Title level={3} className="site-title">
               Название сайта
             </Title>
@@ -189,7 +191,7 @@ const App = () => {
                   </li>
 
                   <li style={{ marginBottom: '8px' }}>
-                    <Link href="https://kubsu.ru" title="Цветок"><img src="./image.jpg" alt="Цветок" width="300" height="300"></img></Link>
+                    <Link href="https://kubsu.ru" title="Цветок"><img src={map} alt="Цветок" width="300" height="300"></img></Link>
                   </li>
 
                   <li style={{ marginBottom: '8px' }}>
@@ -248,7 +250,7 @@ const App = () => {
 
                   <li style={{ marginBottom: '8px' }}>
                     <img
-                      src="./image.jpg"
+                      src={map}
                       alt="Карта-изображение"
                       useMap="#exampleMap"
                       width={300}
