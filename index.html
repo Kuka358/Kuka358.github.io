@@ -1,13 +1,326 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my-appp</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт на Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .table-row-even {
+            background-color: #f8f9fa;
+        }
+
+        .table-row-odd {
+            background-color: #ffffff;
+        }
+
+        .nav-custom .nav-link {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+        }
+
+        .nav-custom .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .content-container {
+            max-width: 960px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-dark">
+        <nav class="navbar navbar-dark">
+            <div class="container">
+                <div
+                    class="d-flex flex-column flex-md-row justify-content-between w-100 align-items-start align-items-md-center">
+                    <div class="d-flex align-items-center mb-3 mb-md-0">
+                        <img src="image.png" alt="Логотип сайта" class="img-fluid" width="50" height="50">
+                        <span class="navbar-brand ms-2 mb-0 h1">Название сайта</span>
+                    </div>
+
+                    <!-- Навигация -->
+                    <ul class="nav nav-custom flex-column flex-md-row gap-2 small mb-md-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#home">Ссылка меню 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#about">Ссылка 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#contact">Ссылка 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="py-4">
+        <div class="container content-container">
+            <div class="row">
+                <div class="col-12 order-2 order-md-1 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-white">
+                            <h5 class="card-title mb-0 fw-bold">Маркированный список гиперссылок</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list">
+                                <li class="mb-2">
+                                    <a href="http://kubsu.ru" target="_blank" rel="noopener noreferrer"
+                                        class="text-decoration-none">
+                                        Абсолютная гиперссылка на главную страницу сайта kubsu.ru
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="https://kubsu.ru" target="_blank" rel="noopener noreferrer"
+                                        class="text-decoration-none">
+                                        Абсолютная гиперссылка на главную страницу сайта kubsu.ru (HTTPS)
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="https://kubsu.ru" title="Цветок" rel="noopener noreferrer">
+                                        <img src="image.jpg" alt="Цветок" class="img-thumbnail" width="300"
+                                            height="300">
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="/about" class="text-decoration-none">
+                                        Сокращенная ссылка на внутреннюю страницу
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="/" class="text-decoration-none">
+                                        Сокращенная ссылка на главную страницу
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#fragment" class="text-decoration-none">
+                                        Ссылка на фрагмент текущей страницы
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <p class="mb-0">
+                                        Это <a href="#fragment" class="text-decoration-none">контекстная ссылка</a> в
+                                        тексте абзаца
+                                    </p>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="index.html?param1=value1&param2=value2&param3=value3"
+                                        class="text-decoration-none">
+                                        Ссылка с тремя параметрами
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="index.html?id=123" class="text-decoration-none">
+                                        Ссылка с параметром id
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="index.html" class="text-decoration-none">
+                                        Относительная ссылка в текущем каталоге
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="about/index.html" class="text-decoration-none">
+                                        Относительная ссылка в каталоге about
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="../../index.html" class="text-decoration-none">
+                                        Относительная ссылка двумя уровнями выше
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <img src="image.jpg" alt="Карта-изображение" usemap="#exampleMap"
+                                        class="img-thumbnail" width="300">
+                                    <map name="exampleMap">
+                                        <area shape="rect" coords="30,30,130,80" href="https://kubsu.ru"
+                                            alt="Прямоугольная область" title="КубГУ" rel="noopener noreferrer">
+                                        <area shape="circle" coords="200,120,30" href="https://kubsu.ru/en"
+                                            alt="Круглая область" title="English version" rel="noopener noreferrer">
+                                    </map>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="https://kubsu.ru" rel="nofollow noopener noreferrer"
+                                        class="text-decoration-none">
+                                        Ссылка без перехода поисковиками
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <div class="d-flex flex-column">
+                                        <a href="https://kubsu.ru" target="_blank" rel="noopener noreferrer"
+                                            class="text-decoration-none mb-1">
+                                            КубГУ
+                                        </a>
+                                        <a href="https://kubsu.ru/en" target="_blank" rel="noopener noreferrer"
+                                            class="text-decoration-none">
+                                            KubSU English version
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <hr>
+
+                            <h5 id="fragment" class="mt-4">Фрагмент страницы</h5>
+                            <p class="mb-0">Это фрагмент страницы, на который ведет одна из ссылок выше.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 order-1 order-md-2 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-white">
+                            <h5 class="card-title mb-0 fw-bold">Таблица данных</h5>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover mb-0">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th>Колонка 1</th>
+                                            <th>Колонка 2</th>
+                                            <th>Колонка 3</th>
+                                            <th>Колонка 4</th>
+                                            <th>Колонка 5</th>
+                                            <th>Колонка 6</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-row-even">
+                                            <td>Данные 1-1</td>
+                                            <td>Данные 1-2</td>
+                                            <td>Данные 1-3</td>
+                                            <td>Данные 1-4</td>
+                                            <td>Данные 1-5</td>
+                                            <td>Данные 1-6</td>
+                                        </tr>
+                                        <tr class="table-row-odd">
+                                            <td>Данные 2-1</td>
+                                            <td colspan="2">Объединенные ячейки 2-2 и 2-3</td>
+                                            <td>Данные 2-4</td>
+                                            <td>Данные 2-5</td>
+                                            <td>Данные 2-6</td>
+                                        </tr>
+                                        <tr class="table-row-even">
+                                            <td>Данные 3-1</td>
+                                            <td>Данные 3-2</td>
+                                            <td>Данные 3-3</td>
+                                            <td>Данные 3-4</td>
+                                            <td rowspan="2">Объединенные строки 3-5 и 4-5</td>
+                                            <td>Данные 3-6</td>
+                                        </tr>
+                                        <tr class="table-row-odd">
+                                            <td>Данные 4-1</td>
+                                            <td>Данные 4-2</td>
+                                            <td>Данные 4-3</td>
+                                            <td>Данные 4-4</td>
+                                            <td>Данные 4-6</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 order-3">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-white">
+                            <h5 class="card-title mb-0 fw-bold">Форма</h5>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-12 mb-3">
+                                        <label for="name" class="form-label fw-semibold">ФИО *</label>
+                                        <input type="text" class="form-control" id="name" required
+                                            placeholder="Иванов Иван Иванович">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label for="phone" class="form-label fw-semibold">Номер телефона *</label>
+                                        <input type="tel" class="form-control" id="phone" required
+                                            placeholder="+71234567890">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label for="email" class="form-label fw-semibold">Email *</label>
+                                        <input type="email" class="form-control" id="email" required placeholder="Введите вашу почту">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label for="date" class="form-label fw-semibold">Дата</label>
+                                        <input type="date" class="form-control" id="date">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label fw-semibold">Пол</label>
+                                    <div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gender" id="male"
+                                                value="male">
+                                            <label class="form-check-label" for="male">Мужской</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gender" id="female"
+                                                value="female">
+                                            <label class="form-check-label" for="female">Женский</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="languages" class="form-label fw-semibold">Любимый язык
+                                        программирования</label>
+                                    <select class="form-select" id="languages" multiple>
+                                        <option value="pascal">Pascal</option>
+                                        <option value="c">C</option>
+                                        <option value="cpp">C++</option>
+                                        <option value="javascript">JavaScript</option>
+                                        <option value="php">PHP</option>
+                                        <option value="python">Python</option>
+                                        <option value="java">Java</option>
+                                        <option value="haskel">Haskel</option>
+                                        <option value="clojure">Clojure</option>
+                                        <option value="prolog">Prolog</option>
+                                        <option value="scala">Scala</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="biography" class="form-label fw-semibold">Биография</label>
+                                    <textarea class="form-control" id="biography" rows="4"
+                                        placeholder="Расскажите о себе"></textarea>
+                                </div>
+
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="agreement" required>
+                                        <label class="form-check-label" for="agreement">
+                                            С контрактом ознакомлен(а)
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary px-4">
+                                    Сохранить
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <div class="container">
+            <p class="mb-0">© 2025 Сергей Волков. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
 </html>
