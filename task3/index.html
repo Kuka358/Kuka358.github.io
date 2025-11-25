@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>WEB1</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header id="site-header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-img"><img src="image.png" alt="Лого" style="width: 70px;"></div>
+                <div class="site-title">Название сайта</div>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#home">Ссылка меню 1</a></li>
+                    <li><a href="#about">Ссылка 2</a></li>
+                    <li><a href="#contact">Ссылка 3</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <section id="links-section">
+            <h2 class="section-title">Маркированный список гиперссылок</h2>
+            <ul class="links-list">
+
+                <li><a href="http://kubsu.ru"
+                        title="Абсолютная гиперссылка на главную страницу сайта kubsu.ru">Абсолютная гиперссылка на
+                        главную страницу сайта kubsu.ru</a></li>
+                <li><a href="https://kubsu.ru"
+                        title="Абсолютная гиперссылка на главную страницу сайта kubsu.ru (HTTPS)">Абсолютная гиперссылка
+                        на главную страницу сайта kubsu.ru (HTTPS)</a></li>
+                <li><a href="https://kubsu.ru" title="Цветок"><img src="image.jpg" alt="Цветок" width="300"
+                            height="300"></a></li>
+                <li><a href="/about" title="Сокращенная ссылка на внутреннюю страницу">Сокращенная ссылка на внутреннюю
+                        страницу</a></li>
+                <li><a href="/" title="Сокращенная ссылка на главную страницу">Сокращенная ссылка на главную
+                        страницу</a></li>
+                <li><a href="#fragment" title="Ссылка на фрагмент текущей страницы">Ссылка на фрагмент текущей
+                        страницы</a></li>
+                <li><a href="index.html?param1=value1&param2=value2&param3=value3"
+                        title="Ссылка с тремя параметрами">Ссылка с тремя параметрами</a></li>
+                <li><a href="index.html?id=123" title="Ссылка с параметром id">Ссылка с параметром id</a></li>
+                <li><a href="index.html" title="Относительная ссылка в текущем каталоге">Относительная ссылка в текущем
+                        каталоге</a></li>
+                <li><a href="about/index.html" title="Относительная ссылка в каталоге about">Относительная ссылка в
+                        каталоге about</a></li>
+                <li><a href="../index.html" title="Относительная ссылка уровнем выше">Относительная ссылка уровнем
+                        выше</a></li>
+                <li><a href="../../index.html" title="Относительная ссылка двумя уровнями выше">Относительная ссылка
+                        двумя уровнями выше</a></li>
+                <li>Это <a href="index.html" title="контекстная ссылка">контекстная ссылка</a> в тексте абзаца</li>
+                <li><a href="https://example.com/page#section" title="Ссылка на фрагмент стороннего сайта">Ссылка на
+                        фрагмент стороннего сайта</a></li>
+
+                <li>
+                    <img src="image.jpg" alt="Image map" usemap="#examplemap" width="300" height="300">
+                    <map name="examplemap">
+                        <area shape="rect" coords="0,0,150,100" href="https://kubsu.ru" alt="Прямоугольная область">
+                        <area shape="circle" coords="225,50,25" href="https://kubsu.ru" alt="Круглая область">
+                    </map>
+                </li>
+
+                <li><a href="">Ссылка с пустым href</a></li>
+                <li><a>Ссылка без href</a></li>
+                <li><a href="https://kubsu.ru" rel="nofollow" title="Ссылка без перехода поисковиками">Ссылка без
+                        перехода поисковиками</a></li>
+                <li><a href="https://kubsu.ru" rel="noindex" title="Ссылка без индексации">Ссылка без индексации</a>
+                </li>
+
+                <li>
+                    <ol class="link-list-number">
+                        <li><a href="https://kubsu.ru" title="Официальный сайт КубГУ">КубГУ</a></li>
+                        <li><a href="https://kubsu.ru/en" title="Official KubSU website">KubSU English version</a></li>
+                    </ol>
+                </li>
+                <li><a href="ftp://user:password@ftp.example.com/file.txt">Ссылка на FTP с авторизацией</a></li>
+            </ul>
+
+            <h2 id="fragment">Фрагмент страницы</h2>
+            <p>Это фрагмент страницы, на который ведет одна из ссылок выше.</p>
+
+        </section>
+
+        <section id="table-section">
+            <h2 class="section-title">Таблица данных</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Колонка 1</th>
+                        <th>Колонка 2</th>
+                        <th>Колонка 3</th>
+                        <th>Колонка 4</th>
+                        <th>Колонка 5</th>
+                        <th>Колонка 6</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Данные 1-1</td>
+                        <td>Данные 1-2</td>
+                        <td>Данные 1-3</td>
+                        <td>Данные 1-4</td>
+                        <td>Данные 1-5</td>
+                        <td>Данные 1-6</td>
+                    </tr>
+                    <tr>
+                        <td>Данные 2-1</td>
+                        <td colspan="2" class="merged-cell">Объединенные ячейки 2-2 и 2-3</td>
+                        <td>Данные 2-4</td>
+                        <td>Данные 2-5</td>
+                        <td>Данные 2-6</td>
+                    </tr>
+                    <tr>
+                        <td>Данные 3-1</td>
+                        <td>Данные 3-2</td>
+                        <td>Данные 3-3</td>
+                        <td>Данные 3-4</td>
+                        <td rowspan="2" class="merged-cell">Объединенные строки 3-5 и 4-5</td>
+                        <td>Данные 3-6</td>
+                    </tr>
+                    <tr>
+                        <td>Данные 4-1</td>
+                        <td>Данные 4-2</td>
+                        <td>Данные 4-3</td>
+                        <td>Данные 4-4</td>
+                        <td>Данные 4-6</td>
+                    </tr>
+                    <tr>
+                        <td>Данные 5-1</td>
+                        <td>Данные 5-2</td>
+                        <td colspan="3" class="merged-cell">Объединенные ячейки 5-3, 5-4, 5-5</td>
+                        <td>Данные 5-6</td>
+                    </tr>
+                    <tr>
+                        <td>Данные 6-1</td>
+                        <td>Данные 6-2</td>
+                        <td>Данные 6-3</td>
+                        <td>Данные 6-4</td>
+                        <td>Данные 6-5</td>
+                        <td>Данные 6-6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="form-section">
+            <h2 class="section-title">Форма</h2>
+            <form class="site-form" action="/" method="POST">
+                <label>
+                    ФИО: <br>
+                    <input name="field-name" placeholder="Иванов Иван Иванович">
+                </label><br>
+
+                <label>
+                    Номер телефона:<br>
+                    <input name="field-number" type="tel" placeholder="+71234567890">
+                </label><br>
+
+                <label>
+                    Текстовое поле email:<br>
+                    <input name="field-email" type="email" placeholder="Введите вашу почту">
+                </label><br>
+
+                <label>
+                    Текстовое поле даты:<br>
+                    <input name="field-date" value="2025-09-01" type="date">
+                </label><br>
+
+                Пол:<br>
+                <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1">
+                    Мужской</label>
+                <label><input type="radio" name="radio-group-1" value="Значение2">
+                    Женский</label><br>
+
+                <label>
+                    Любимый язык программирования:
+                    <br>
+                    <select name="field-PL[]" multiple="multiple">
+                        <option value="1">Pascal</option>
+                        <option value="2" selected="selected">C</option>
+                        <option value="3" selected="selected">C++</option>
+                        <option value="4">JavaScript</option>
+                        <option value="5">PHP</option>
+                        <option value="6">Python</option>
+                        <option value="7">Java</option>
+                        <option value="8">Haskel</option>
+                        <option value="9">Clojure</option>
+                        <option value="10">Prolog</option>
+                        <option value="11">Scala</option>
+                    </select>
+                </label><br>
+
+                <label>
+                    Биография:<br>
+                    <textarea name="field-biography"></textarea>
+                </label><br>
+
+                <br>
+                <label>С контрактом ознакомлен(а)<input type="checkbox" name="check-1">
+                </label><br>
+
+                <input type="submit" value="Сохранить">
+
+            </form>
+        </section>
+    </main>
+
+    <footer id="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Сергей Волков. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
