@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крутой калькулятор покупок</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Выбор услуги</h1>
+    
+        <div class="form-section">
+            <div class="section-title">1. Количество</div>
+            <div class="quantity-input">
+                <label for="quantity">Введите количество:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="100" value="1">
+            </div>
+            <div id="quantity-error"></div>
+        </div>
+    
+        <div class="form-section">
+            <div class="section-title">2. Тип услуги</div>
+            <form class="radio-group" id="radio-group">
+                <input type="radio" id="service1" name="service" value="1" checked>
+                <label for="service1">
+                    <span class="service-name">Базовая услуга</span>
+                    <span class="service-description"></span>
+                </label>
+                
+                <input type="radio" id="service2" name="service" value="2">
+                <label for="service2">
+                    <span class="service-name">Премиум услуга</span>
+                    <span class="service-description"></span>
+                </label>
+                
+                <input type="radio" id="service3" name="service" value="3">
+                <label for="service3">
+                    <span class="service-name">Экспресс услуга</span>
+                    <span class="service-description"></span>
+                </label>
+            </form>
+        </div>
+    
+        <div class="form-section">
+            <div class="select-group" id="product-field">
+                <label for="product-option" style="margin-bottom: 8px; font-weight: 500;">Выберите опцию товара:</label>
+                <select id="product-option" name="product-option">
+                    <option value="0">Стандартная комплектация</option>
+                    <option value="200">Расширенная комплектация (+200 к стоимости)</option>
+                    <option value="500">Профессиональный пакет (+500 к стоимости)</option>
+                    <option value="1000">Полный пакет с доп. гарантией (+1000 к стоимости)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="section-title" id="property-field" style="display:none;">
+                <label><input id="property-checkbox" type="checkbox">Индивидуальная услуга (+2000 к стоимости)</label>
+            </div>
+        </div>
+    
+        <div class="summary">
+            <h3>Сводка выбора</h3>
+            <p id="summary">Стоимость: 0</p>
+        </div>
+    
+    </div>
+</body>
+
+</html>
