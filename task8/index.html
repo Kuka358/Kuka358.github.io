@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт с формой обратной связи</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Обратная связь</h1>
+            <p>Свяжитесь с нами, и мы обязательно ответим на все ваши вопросы. Наша команда готова помочь вам!</p>
+        </div>
+
+        <div class="content">
+            <button class="cta-button" id="openFeedbackBtn">
+                Написать сообщение
+            </button>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="feedback-form">
+            <button class="close-button" id="closeModalBtn">&times;</button>
+
+            <h2 class="form-title">Форма обратной связи</h2>
+
+            <form id="feedbackForm">
+                <div class="form-group">
+                    <label class="form-label" for="fullName">ФИО *</label>
+                    <input type="text" id="fullName" class="form-input" placeholder="Иванов Иван Иванович" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="email">Email *</label>
+                    <input type="email" id="email" class="form-input" placeholder="example@mail.ru" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="phone">Телефон</label>
+                    <input type="tel" id="phone" class="form-input" placeholder="+7 (999) 123-45-67">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="organization">Организация</label>
+                    <input type="text" id="organization" class="form-input" placeholder="ООО Ваша компания">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="message">Сообщение *</label>
+                    <textarea id="message" class="form-input" placeholder="Опишите вашу проблему или вопрос..."
+                        required></textarea>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="privacyPolicy" required>
+                    <label for="privacyPolicy">
+                        Я согласен с политикой обработки персональных данных *
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-button" id="submitBtn">
+                    Отправить сообщение
+                </button>
+
+                <div class="message" id="messageContainer"></div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        
+    </script>
+</body>
+
+</html>
