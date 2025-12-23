@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelPro - Турагентство вашей мечты</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <!-- Slick Slider -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+    <script src="script.js"defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <i class="fas fa-plane"></i>
+                    <span class="logo-text">Travel<span class="logo-accent">Pro</span></span>
+                </div>
+
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="active">Главная</a></li>
+                        <li><a href="#countries">Направления</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-contacts">
+                    <a href="tel:+79991234567" class="phone">+7 (999) 123-45-67</a>
+                    <a href="#contactForm" class="BtnTour">Подобрать тур</a></li>
+                </div>
+
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h2 class="section-title">Горящие предложения</h2>
+            <div class="main-slider">
+                <!-- Слайд 1 -->
+                <div class="slider-item">
+                    <div class="slide-image"
+                        style="background-image: url('pictures/Antalia2.jpg');">
+                    </div>
+                    <div class="slide-content">
+                        <h3>Турция, Анталия</h3>
+                        <p>Все включено, 7 ночей</p>
+                        <div class="slide-price">от 35 000 ₽</div>
+                    </div>
+                </div>
+
+                <div class="slider-item">
+                    <div class="slide-image"
+                    style="background-image: url('pictures/phuket.jpg');">
+                </div>
+                    <div class="slide-content">
+                        <h3>Тайланд, Пхукет</h3>
+                        <p>Пляжный отдых, 10 ночей</p>
+                        <div class="slide-price">от 65 000 ₽</div>
+                    </div>
+                </div>
+
+                <div class="slider-item">
+                    <div class="slide-image"
+                        style="background-image: url('pictures/RedLand.jpg');">
+                    </div>
+                    <div class="slide-content">
+                        <h3>Сочи, Красная Поляна</h3>
+                        <p>Горнолыжный курорт</p>
+                        <div class="slide-price">от 25 000 ₽</div>
+                    </div>
+                </div>
+
+                <div class="slider-item">
+                    <div class="slide-image"
+                        style="background-image: url('pictures/UAE.jpg');">
+                    </div>
+                    <div class="slide-content">
+                        <h3>ОАЭ, Дубай</h3>
+                        <p>Шопинг и отдых, 8 ночей</p>
+                        <div class="slide-price">от 55 000 ₽</div>
+                    </div>
+                </div>
+
+                <div class="slider-item">
+                    <div class="slide-image"
+                       style="background-image: url('pictures/Egypt.jpg');">
+                    </div>
+                    <div class="slide-content">
+                        <h3>Египет, Хургада</h3>
+                        <p>Дайвинг, все включено</p>
+                        <div class="slide-price">от 40 000 ₽</div>
+                    </div>
+                </div>
+
+                <div class="slider-item">
+                    <div class="slide-image"
+                        style="background-image: url('pictures/Spain.jpg');">
+                    </div>
+                    <div class="slide-content">
+                        <h3>Испания, Барселона</h3>
+                        <p>Экскурсионный тур</p>
+                        <div class="slide-price">от 50 000 ₽</div>
+                    </div>
+                </div>
+
+                <div class="slider-item">
+                    <div class="slide-image"
+                        style="background-image: url('pictures/Crete.jpg');">
+                    </div>
+                    <div class="slide-content">
+                        <h3>Греция, Крит</h3>
+                        <p>Пляжи и история, 9 ночей</p>
+                        <div class="slide-price">от 45 000 ₽</div>
+                    </div>
+                </div>
+
+                <div class="slider-item">
+                    <div class="slide-image"
+                        style="background-image: url('pictures/France.jpg');">
+                    </div>
+                    <div class="slide-content">
+                        <h3>Франция, Париж</h3>
+                        <p>Романтическое путешествие</p>
+                        <div class="slide-price">от 60 000 ₽</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="destinations" id="countries">
+        <div class="container">
+            <h2 class="section-title">Популярные направления</h2>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <div class="destination-image"
+                        style="background-image: url('pictures/Istanbul.jpg');">
+                        <span class="destination-price">от 35 000 ₽</span>
+                    </div>
+                    <h3>Турция</h3>
+                    <p>Анталия, Стамбул, все включено. Вылеты каждую неделю.</p>
+                </div>
+
+                <div class="destination-card">
+                    <div class="destination-image"
+                        style="background-image: url('pictures/Krabi.jpg');">
+                        <span class="destination-price">от 65 000 ₽</span>
+                    </div>
+                    <h3>Тайланд</h3>
+                    <p>Пхукет, Паттайя, Самуи. Экзотика и комфорт.</p>
+                </div>
+
+                <div class="destination-card">
+                    <div class="destination-image"
+                        style="background-image: url('pictures/Pyramide.jpg');">
+                        <span class="destination-price">от 40 000 ₽</span>
+                    </div>
+                    <h3>Египет</h3>
+                    <p>Хургада, Шарм-эль-Шейх. Красное море, дайвинг.</p>
+                </div>
+
+                <div class="destination-card">
+                    <div class="destination-image"
+                        style="background-image: url('pictures/LOURVE.jpg');">
+                        <span class="destination-price">от 55 000 ₽</span>
+                    </div>
+                    <h3>Франция</h3>
+                    <p>Париж, Лазурный берег. Романтика и культура.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="advantages">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нас</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Финансовая гарантия</h3>
+                    <p>Все платежи застрахованы. Гарантия лучшей цены.</p>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Поддержка 24/7</h3>
+                    <p>Наш менеджер сопровождает вас на протяжении всей поездки.</p>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <h3>Визовая поддержка</h3>
+                    <p>Помощь в оформлении виз любой сложности.</p>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Только проверенные отели</h3>
+                    <p>Работаем напрямую с отелями 4-5 звезд.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма обратной связи -->
+    <section class="contact-form-section" id="contactForm">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-info">
+                    <h2 class="section-title">Подберите идеальное путешествие</h2>
+                    <p class="form-subtitle">Оставьте заявку и наш менеджер подберет для вас лучшие варианты в течение
+                        30 минут.</p>
+
+                    <div class="form-guarantees">
+                        <div class="guarantee">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Бесплатная консультация</span>
+                        </div>
+                        <div class="guarantee">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Подбор по вашему бюджету</span>
+                        </div>
+                        <div class="guarantee">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Гарантия лучшей цены</span>
+                        </div>
+                    </div>
+
+                    <div class="manager-photo">
+                        <div class="photo-frame">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <p><strong>Ваш персональный менеджер — Сергей</strong><br>Опыт работы: 6 лет</p>
+                    </div>
+                </div>
+
+                <div class="form-wrapper">
+                    <form id="travelForm" class="travel-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Ваше имя" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Номер телефона *" required>
+                        </div>
+
+                        <div class="form-group">
+                            <select id="destination">
+                                <option value="" disabled selected>Желаемое направление</option>
+                                <option value="Турция">Турция</option>
+                                <option value="Тайланд">Тайланд</option>
+                                <option value="Египет">Египет</option>
+                                <option value="ОАЭ">ОАЭ</option>
+                                <option value="Европа">Европа</option>
+                                <option value="Другое">Другое</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="number" id="budget" placeholder="Примерный бюджет (руб)">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="date" id="date" placeholder="Желаемые даты">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="number" id="people" placeholder="Количество человек">
+                        </div>
+
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="agreement" required>
+                            <label for="agreement">Согласен на обработку персональных данных</label>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Подобрать тур!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contacts">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-plane"></i>
+                        <span class="logo-text">Travel<span class="logo-accent">Pro</span></span>
+                    </div>
+                    <p class="footer-description">Турагентство с 2010 года. Более 50 000 довольных клиентов.</p>
+                    <div class="footer-map">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>г. Краснодар, ул. Туристическая, 15</span>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Контакты</h3>
+                    <div class="footer-contact">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+                    </div>
+                    <div class="footer-contact">
+                        <i class="fas fa-clock"></i>
+                        <span>Пн-Пт: 9:00 - 20:00, Сб-Вс: 10:00 - 18:00</span>
+                    </div>
+                    <div class="footer-contact">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:info@travelpro.ru">info@travelpro.ru</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="#tours">Горящие туры</a></li>
+                        <li><a href="#countries">Все направления</a></li>
+                        <li><a href="#about">О компании</a></li>
+                        <li><a href="#contacts">Офисы продаж</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Мы в соцсетях</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 TravelPro. Все права защищены.</p>
+                <div class="footer-legal">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Договор-оферта</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
